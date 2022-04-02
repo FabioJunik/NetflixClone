@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.movieRow{
+    margin-bottom: 30px;
+}
+
+.movieRow h2{
+    margin-left: 30px;
+}
+
+.movieRow_listArea{
+    overflow: hidden;
+}
+.movieRow_list{
+    width: 9999990px;
+}
+.movieRow_item{
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+
+.movieRow_item img{
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease .2s;
+}
+
+.movieRow_item img:hover{
+    transform: scale(1);
+}
