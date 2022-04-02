@@ -1,6 +1,8 @@
 const API_KEY = '61a4a4df54931b084db9eeb3ddc96c2c';
 const API_BASE = 'https://api.themoviedb.org/3';
 
+//https://api.themoviedb.org/3/tv/85552?language=pt-BR&api_key=61a4a4df54931b084db9eeb3ddc96c2c
+
 const basicFetch = async (endpoint)=>{
     const req = await fetch(`${API_BASE}${endpoint}`);
     const json = await req.json();
@@ -52,4 +54,13 @@ const getHomeList = async()=>{
         }
     ];
 }
-export default getHomeList;
+
+const getMovieInfo = async (movieId, type)=>{
+    let info;
+    let typeRigth = type === 'movie'? 'movie': 'tv';
+
+    info = await basicFetch(`/${typeRigth}/${movieId}?language=pt-BR&api_key=${API_KEY}`);
+
+    return info;
+}
+export {getHomeList, getMovieInfo};
