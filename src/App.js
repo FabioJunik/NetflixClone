@@ -4,6 +4,7 @@ import {getHomeList, getMovieInfo} from './Tmdb';
 import FeatureMovie from './components/featureMovie/featureMovie';
 import MovieRow from './components/movieRow/movieRow';
 import Header from './components/header/header';
+import Footer from './components/footer/footer'
 
 const App = () =>{
     const [movieList, setMovieList] = useState([]);
@@ -39,7 +40,6 @@ const App = () =>{
     },[]);
 
     return (
-        
        <div className='page'>
            <Header black={blackHeader}/>
            {featuredData && 
@@ -49,9 +49,9 @@ const App = () =>{
                     <MovieRow key={key}  title={item.title} items={item.items} />
                ))}
            </section>
+            <Footer/>
        </div>
     );
-
 }
 
 export default  App
