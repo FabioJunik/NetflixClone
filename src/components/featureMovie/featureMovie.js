@@ -9,6 +9,11 @@ const FeatureMovie = ({item})=>{
         genres.push(item.genres[i].name);
     }
 
+    // let description = item.overview;
+
+    // if(description.length > 250)
+    //     description = description.substring(0,250)
+
     // const genres = item.genres.map(genre=> {console.log(genre)});
     // console.log(genres);
     return(

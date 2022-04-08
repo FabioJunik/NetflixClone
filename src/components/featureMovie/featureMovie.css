@@ -51,6 +51,12 @@
     font-size: 20px;
     color: #999;
     max-width:40%;   
+    height: 100px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .featuredButtons{
@@ -85,4 +91,31 @@
 .featuredGenres{
     margin-top: 15px;
     color: #999;
+}
+
+@media (max-width:760px) {
+    .featured{
+        height: 90vh;
+    }
+    .featuredHorizontal  h1{
+        font-size: 40px;
+    }
+    .featuredInfo span{
+        font-size: 16px;
+    }
+    .featuredDescription{
+        max-width: 100%;
+        margin-right: 30px;
+        font-size: 14px;
+    }
+
+    .featuredButtons a{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .featuredGenres{
+        font-size: 14px;
+    }
+
 }
