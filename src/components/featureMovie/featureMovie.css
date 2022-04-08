@@ -1,5 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 .featured{
     height: 100vh;
     background-size: cover;
     background-position: center;
+}
+
+.featuredVertical{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featuredHorizontal{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 100px;
+    padding-top: 70px;
+}
+
+.featuredHorizontal h1{
+    font-size: 60px;
+}
+
+.featuredInfo {
+    margin-top: 15px;
+}
+
+.featuredInfo span{
+    font-size: 18px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.featuredInfo .points{
+    color: #46d369;
+}
+
+.featuredDescription{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width:40%;   
+}
+
+.featuredButtons{
+    margin-top: 15px;
+}
+
+.featuredButtons a{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.featuredButtons a:hover{
+    opacity: .7;
+}
+
+.featuredButtons .watch{
+    background-color: #fff;
+    color: #000;
+}
+
+.featuredButtons .myList{
+    background-color: #000;
+    color: #fff;
+}
+
+.featuredGenres{
+    margin-top: 15px;
+    color: #999;
 }

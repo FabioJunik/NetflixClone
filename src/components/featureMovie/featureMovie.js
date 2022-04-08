@@ -16,17 +16,17 @@ const FeatureMovie = ({item})=>{
             <div className="featuredVertical">
                 <div className="featuredHorizontal">
                     <h1>{item.original_name}</h1>
-                    <div className="info">
-                        <span>{item.vote_average} pontos</span>
+                    <div className="featuredInfo">
+                        <span className="points">{item.vote_average} pontos</span>
                         <span>{firstDate.getFullYear()}</span>
-                        <span>{item.number_of_seasons} temporada{item.number_of_seasons != 1?'s':''}</span>
+                        <span>{item.number_of_seasons} temporada{item.number_of_seasons !== 1?'s':''}</span>
                     </div>
-                    <div className="featuredDescripition">
+                    <div className="featuredDescription">
                         {item.overview}
                     </div>
-                    <div className="featuredButton">
-                        <a href={`/watch/${item.id}`}> Assistir</a>
-                        <a href={`/list/add/${item.id}`}>+ Minha lista</a>
+                    <div className="featuredButtons">
+                        <a href={`/watch/${item.id}`} className="watch"> Assistir</a>
+                        <a href={`/list/add/${item.id}`} className="myList">+ Minha lista</a>
                     </div>
                     <div className="featuredGenres">
                         <strong>Generos: </strong>
