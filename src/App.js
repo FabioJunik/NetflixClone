@@ -50,6 +50,9 @@ const App = () =>{
                ))}
            </section>
             <Footer/>
+            <div className='loading'>
+                <img src={`https://64.media.tumblr.com/5bf8ba688ff3553b900a40dad2bbc1e0/tumblr_inline_pl93uu9rT41t9ij1a_1280.gifv`} alt='loading'/>
+            </div>
        </div>
     );
 }
